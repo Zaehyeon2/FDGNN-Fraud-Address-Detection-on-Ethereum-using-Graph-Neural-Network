@@ -1,4 +1,4 @@
-# FDGNN: Fraud-Address-Detection-on-Ethereum-using-Graph-Neural-Network
+# FDGNN: Fraud Address Detection using Graph Neural Network on Ethereum
 
 ### Abstract
 
