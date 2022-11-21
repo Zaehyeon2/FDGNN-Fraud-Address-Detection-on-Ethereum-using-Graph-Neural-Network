@@ -4,7 +4,7 @@
 
 Recently, cybercrimes that exploit the anonymity of blockchain are increasing. They steal blockchain users' assets, threaten the network's reliability, and destabilize the blockchain network. Therefore, it is necessary to detect blockchain cybercriminal accounts to protect users' assets and sustain the blockchain ecosystem. Many studies have been conducted to detect cybercriminal accounts in the blockchain network. They represented blockchain transaction records as homogeneous transaction graphs that have multi-edge. They also adopted graph learning algorithms to analyze transaction graphs. However, most graph learning algorithms are not efficient in multi-edge graphs, and homogeneous graphs ignore the heterogeneity of the blockchain network. In this paper, we propose a novel heterogeneous graph structure called an account-transaction graph, ATGraph. ATGraph represents multi-edge as single edges by considering transactions as nodes. It allows graph learning more efficiently by eliminating multi-edges. Moreover, we compare the performance of ATGraph with homogeneous transaction graphs in various graph learning algorithms. The experimental results show that the detection performance using ATGraph as input outperforms that using homogeneous graphs as input by up to 0.2 AUROC.
 
-![overview](overall2.png)
+![overview](framework2.png)
 
 ### Requirements
 
@@ -26,4 +26,4 @@ We collect labeled Ethereum addresses from various sources, including normal, ph
 
 ### Results
 
-![Results](result.png)
+![Results](results.png)
