@@ -2,9 +2,9 @@
 
 ### Abstract
 
-Cybercrimes that exploit the anonymity of blockchain are increasing in the Ethereum network. Cybercrimes that exploit Ethereum steal users’ assets and cause sudden price volatility, destabilizing the Ethereum network. To prevent cybercrimes in the Ethereum network, node classification-based studies have been conducted to detect cybercriminal accounts. However, the actual role of most Ethereum nodes is unknown owing to the anonymity of the blockchain. This leads to an incomplete label problem in the node-classification-based detection model. In this paper, we propose a graph neural network-based cybercriminal account detection method that considers the incomplete label problem. We perform graph classification rather than node classification to address the incomplete label problem. Moreover, we design an account-transaction graph, which is a directed graph of Ethereum transactions, for graph classification. The experimental results show that the proposed method outperforms the node classification-based method by 0.07 with respect to the F1 score.
+Recently, cybercrimes that exploit the anonymity of blockchain are increasing. They steal blockchain users' assets, threaten the network's reliability, and destabilize the blockchain network. Therefore, it is necessary to detect blockchain cybercriminal accounts to protect users' assets and sustain the blockchain ecosystem. Many studies have been conducted to detect cybercriminal accounts in the blockchain network. They represented blockchain transaction records as homogeneous transaction graphs that have multi-edge. They also adopted graph learning algorithms to analyze transaction graphs. However, most graph learning algorithms are not efficient in multi-edge graphs, and homogeneous graphs ignore the heterogeneity of the blockchain network. In this paper, we propose a novel heterogeneous graph structure called an account-transaction graph, ATGraph. ATGraph represents multi-edge as single edges by considering transactions as nodes. It allows graph learning more efficiently by eliminating multi-edges. Moreover, we compare the performance of ATGraph with homogeneous transaction graphs in various graph learning algorithms. The experimental results show that the detection performance using ATGraph as input outperforms that using homogeneous graphs as input by up to 0.2 AUROC.
 
-![overview](overall.png)
+![overview](overall2.png)
 
 ### Requirements
 
@@ -24,3 +24,6 @@ We collect labeled Ethereum addresses from various sources, including normal, ph
 
 ![The Summary of Collected Data](data.png)
 
+### Results
+
+![Results](result.png)
